@@ -1,6 +1,8 @@
 packtools
 =========
 
+Packaging tools for pip/rpm/and more!
+
 multipip
 --------
 
