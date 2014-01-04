@@ -120,7 +120,7 @@ cache subdirectories). It also automatically prunes duplicated downloads if they
 are of the same project name (which pip appears to do sometimes, such as in the distribute
 and setuptools fiasco). This helps avoid needless duplication::
 
-    $ ./tools/pip-download -d /tmp/e 'setuptools>0.8' 'flake8'
+    $ pip-download -d /tmp/e 'setuptools>0.8' 'flake8'
     Saved /tmp/e/flake8-2.0.tar.gz
     Saved /tmp/e/mccabe-0.2.1.tar.gz
     Saved /tmp/e/pep8-1.4.6.tar.gz
@@ -135,7 +135,7 @@ specprint
 of an rpm spec file in a easy to parse format. It writes results of its work to
 standard output in JSON (which is much easier to use from other programs)::
 
-    $ ./tools/specprint -f python.spec
+    $ specprint -f python.spec
     {
         "headers": {
             "arch": "x86_64",
